@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\DeviceController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MaintenanceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('/dispositivos',DeviceController::class);
+
+Route::resource('/clientes',CustomerController::class);
+
+Route::get('/mantenimientos', [MaintenanceController::class, 'index'])->name('mantenimientos.index');
