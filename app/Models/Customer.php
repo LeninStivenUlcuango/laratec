@@ -21,7 +21,7 @@ class Customer extends Model
     }
 
     public static function customerFilter($client_data){
-        return Customer::clienteData($client_data)->paginate(2);
+        return Customer::clienteData($client_data)->paginate(10);
     }
 
     public function scopeClienteData($query, $client_data){

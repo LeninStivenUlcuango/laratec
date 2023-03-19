@@ -18,7 +18,9 @@
     {{-- JQuery --}}
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss'])
+    @vite(['resources/js/app.js'])
+
 </head>
 <body>
     <div id="app">
@@ -81,7 +83,6 @@
         </main>
     </div>
 
-    
 <footer>
     @section('scripts')
     @show

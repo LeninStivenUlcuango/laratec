@@ -1,4 +1,3 @@
-
 <script>
     @if(session()->has('message'))
     Toast.fire({
