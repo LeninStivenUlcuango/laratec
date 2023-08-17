@@ -2,7 +2,7 @@
 
 @slot('title')
     Tipos de mantenimientos
-    <a href="#" class="btn btn-secondary float-end">
+    <a href="{{route('mantenimientos.create')}}" class="btn btn-secondary float-end">
         <i class="fas fa-info-circle"> Crear mantenimento</i>
     </a>
 @endslot

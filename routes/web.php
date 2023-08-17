@@ -29,3 +29,5 @@ Route::resource('/dispositivos',DeviceController::class);
 Route::resource('/clientes',CustomerController::class);
 
 Route::get('/mantenimientos', [MaintenanceController::class, 'index'])->name('mantenimientos.index');
+Route::get('/mantenimientos/create', [MaintenanceController::class, 'create'])->name('mantenimientos.create');
+Route::post('/mantenimientos/store', [MaintenanceController::class, 'store'])->name('mantenimientos.store');

@@ -27,7 +27,6 @@
                 <a href="{{route('clientes.show',[$customer->id])}}" class="btn btn-outline-primary"><i class="fas fa-plus"></i> Ver mas</a>
                 <a href="{{route('clientes.edit',[$customer])}}" class="btn btn-outline-warning"><i class="fas fa-pen-to-square"></i> Editar</a>
                 <a href="{{route('clientes.destroy',[$customer])}}" class="btn btn-outline-danger" @click='getElementData'  data-id='{{$customer->id}}' class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#deleteModal" ><i class="fas fa-trash"></i> Eliminar</a>
-
             </td>
           </tr>
         @empty

@@ -20,7 +20,7 @@
     
     @vite(['resources/sass/app.scss'])
     @vite(['resources/js/app.js'])
-
+    @livewireStyles()
 </head>
 <body>
     <div id="app">
@@ -79,10 +79,11 @@
         </nav>
 
         <main class="py-4">
+            {{-- <livewire:articles/> --}}
             @yield('content')
         </main>
     </div>
-
+    @livewireScripts()
 <footer>
     @section('scripts')
     @show
